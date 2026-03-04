@@ -16,7 +16,7 @@ namespace ApiOptimizerService.Data
         }
 
         public DbSet<ApiMetric> ApiMetrics { get; set; }
-        public DbSet<OptimizationReport> OptimizationReports { get; set; }
+        public DbSet<OptimizationReport> OptimizationReports { get; set; } // Add this line for the OptimizationReport DbSet
 
     }
 }
