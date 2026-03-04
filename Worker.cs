@@ -26,6 +26,7 @@ public class Worker : BackgroundService
         _logger = logger;
     }
 
+    // Runs every 5 minutes to analyze API metrics, get AI suggestions, and generate reports
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         _logger.LogInformation("AI Optimizer Service Started...");
